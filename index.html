@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多人大富翁</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GUN.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="login-section">
+            <h2>加入遊戲</h2>
+            <input type="text" id="player-name" placeholder="輸入你的名字">
+            <button id="join-btn">加入遊戲</button>
+        </div>
+
+        <div id="game-section" style="display: none;">
+            <div id="game-info">
+                <h2>遊戲狀態</h2>
+                <div id="current-player"></div>
+                <div id="player-money"></div>
+            </div>
+
+            <div id="game-board"></div>
+
+            <div id="controls">
+                <button id="roll-dice" disabled>擲骰子</button>
+                <div id="dice-result"></div>
+            </div>
+
+            <div id="players-list">
+                <h3>玩家列表</h3>
+                <div id="players"></div>
+            </div>
+
+            <div id="property-info">
+                <h3>土地資訊</h3>
+                <div id="current-property"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
